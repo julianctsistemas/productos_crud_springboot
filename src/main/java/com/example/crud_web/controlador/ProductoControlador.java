@@ -27,11 +27,6 @@ public class ProductoControlador {
         return "productos";
     }
 
-    @GetMapping("/login")
-    public String login() {
-        return "login";
-    }
-
     @GetMapping("/registroProducto")
     public String registroProducto(Model model) {
         model.addAttribute("producto", new Producto());
